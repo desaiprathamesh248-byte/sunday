@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Didi ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h3>🎀 Didi's Birthday</h3>
+    <button id="musicBtn">♫ Music Off</button>
+</header>
+
+<section class="hero">
+    <div class="cat">🐱🎀</div>
+    <h1>Happy Birthday<br><span>DIDIIII!</span></h1>
+    <p>A special surprise made with lots of love ❤️</p>
+    <button onclick="startSurprise()">Open Your Surprise 💌</button>
+</section>
+
+<section id="message" class="hidden">
+    <div class="letter">
+        <h2>Dear Didi ❤️</h2>
+        <p>
+            You are my favourite person, my partner in crime,
+            my personal headache and my biggest blessing.
+            I am lucky to have you as my sister.
+        </p>
+        <h3>Love you forever! 🥹❤️</h3>
+        <button onclick="showToast('Sending you a giant hug! 🤗')">
+            Virtual Hug 🤗
+        </button>
+    </div>
+</section>
+
+<section class="section">
+    <h2>🐱 Birthday Cat Department</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">😼🎂</div>
+            <h3>Birthday Boss</h3>
+            <p>Give Didi unlimited cake!</p>
+        </div>
+        <div class="card">
+            <div class="emoji">😹🎁</div>
+            <h3>Gift Inspector</h3>
+            <p>I came for the snacks.</p>
+        </div>
+        <div class="card">
+            <div class="emoji">😻💗</div>
+            <h3>Love Manager</h3>
+            <p>Didi deserves everything!</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>😂 Didi Memes</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">🐱👀</div>
+            <h3>When Didi is angry</h3>
+            <p>Everybody run! 😂</p>
+        </div>
+        <div class="card">
+            <div class="emoji">🐈💅</div>
+            <h3>Getting ready</h3>
+            <p>Just 5 minutes... 2 hours later!</p>
+        </div>
+        <div class="card">
+            <div class="emoji">😹🍰</div>
+            <h3>Cake sharing</h3>
+            <p>One bite for you, rest for Didi!</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>💌 16 Secret Messages</h2>
+    <p>Click every envelope to unlock your surprises!</p>
+    <div id="surpriseGrid" class="surprise-grid"></div>
+</section>
+
+<section class="final">
+    <div class="emoji">🐱💐</div>
+    <h2>One Last Thing, Didi ❤️</h2>
+    <p>
+        May your life be full of happiness, success,
+        beautiful memories and endless smiles.
+        Never stop being amazing!
+    </p>
+    <h2>Love You Didi! ❤️</h2>
+    <button onclick="confettiBurst()">Celebrate 🎉</button>
+</section>
+
+<div id="modal" class="modal">
+    <div class="modal-box">
+        <button class="close" onclick="closeModal()">×</button>
+        <div id="modalEmoji" class="emoji"></div>
+        <h2 id="modalTitle"></h2>
+        <p id="modalText"></p>
+        <button onclick="closeModal()">Awww ❤️</button>
+    </div>
+</div>
+
+<div id="toast"></div>
+
+<footer>Made with ❤️ for the world's best Didi!</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
